@@ -67,20 +67,6 @@
 
 	</dependencies>
 
-	<repositories>
-		<repository>
-			<id>ingInternalRepository</id>
-			<url>https://artifactory.ing.net/artifactory/releases_mvn_all</url>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>central</id>
-			<name>releases_mvn_all</name>
-			<url>https://artifactory.ing.net/artifactory/releases_mvn_all</url>
-		</pluginRepository>
-	</pluginRepositories>
-
 	<build>
 		<plugins>
 			<plugin>
