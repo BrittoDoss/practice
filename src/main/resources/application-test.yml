@@ -1,0 +1,33 @@
+logging:
+    level:
+        com:
+            java:
+                circle:
+                    practice: DEBUG
+        org:
+            hibernate:
+                SQL: DEBUG
+                type: TRACE
+        root: WARN
+spring:
+    datasource:
+        driverClassName: org.h2.Driver
+        platform: h2
+        url: jdbc:h2:mem:task;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=TRUE;
+    h2:
+        console:
+            enabled: true
+            path: /h2-console
+            settings:
+                trace: false
+                web-allow-others: false
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            ddl-auto: create
+            naming:
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        properties:
+            hibernate:
+                show_sql: true
+        show-sql: true
